@@ -66,7 +66,7 @@ try{
         console.log('Deleeting with ID',id)
         res.send(result);
     })
-
+// MY BOOKED PACKAGES
     app.get('/allbooked/:email', async (req,res)=>{
         console.log(req.params.email)
         const result = await bookedPackagesCollection.find({
@@ -75,7 +75,7 @@ try{
         res.send(result)
     })
 }
-// git remote add origin https://github.com/tourism-or-delivery-website-server-side-AnikBarua34.git
+// git remote add origin https://github.com/tourism-or-delivery-website-server-side-AnikBarua34.git 
 finally {
     // await client.close();
   }
